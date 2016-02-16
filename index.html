@@ -24,12 +24,13 @@
                 <ul>
                     <li>
                       <a href="#" data-scrollto="splash">Home</a>
+
                     </li>
                     <li>
-                      <a href="#" data-scrollto="feature">About</a>
+                      <a href="#" data-scrollto="about-section">About</a>
                     </li>
                     <li>
-                      <a href="#" data-scrollto="overview">Contact</a>
+                      <a href="#" data-scrollto="contact-section">Contact</a>
                     </li>
                     <!-- <li>
                       <a href="#" data-scrollto="cta">Download</a>
@@ -47,7 +48,7 @@
             <a class="btn" href="#" data-scrollto="overview">Learn More<i class="fa fa-angle-down"></i></a>
         </div>
     </section>
-    <section class="feature greybg about-section">
+    <section class="feature greybg about-section" id="#about-section">
         <div class="container">
             <div class="about-us-blurb">
                 <h1>About Us</h1>
@@ -88,7 +89,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-section">
+    <section class="contact-section" id="#contact-section">
         <div class="container">
             <div class="card hour-details">
                 <div class="card-head">
@@ -257,114 +258,9 @@
     </div> -->
     </footer>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <!-- <script src="assets/js/jquery-1.12.0.min.js"></script> -->
     <script src="assets/js/script.js"></script>
-    <!-- <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
     <script src="assets/js/modernizr-2.8.3.min.js"></script>
-    <!--  Map -->
-    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs6uyupciaLRLE3oGQhwnGjHljuuzJ6Vk&callback=initMap" type="text/javascript"></script> -->
-    <!-- <script>
-function initMap() {
-
-var myLatlng = {lat: 40.056550, lng: -75.235496}
-
-  // Specify features and elements to define styles.
-  var styleArray = [
-    {
-      featureType: "all",
-      stylers: [
-       { saturation: -80 }
-      ]
-    },{
-      featureType: "road.arterial",
-      elementType: "geometry",
-      stylers: [
-        { hue: "#00ffee" },
-        { saturation: 50 }
-      ]
-    },{
-      featureType: "poi.business",
-      elementType: "labels",
-      stylers: [
-        { visibility: "off" }
-      ]
-    }
-  ];
-
-  // Create a map object and specify the DOM element for display.
-  var map = new google.maps.Map(document.getElementById('map_canvas'), {
-    center: {lat: 40.056550, lng: -75.235496},
-    scrollwheel: false,
-    // Apply the map style array to the map.
-    styles: styleArray,
-    zoom: 14,
-    center: {lat: 40.056550, lng: -75.235496},
-  });
-
-  var marker = new google.maps.Marker({
-    position: {lat: 40.056550, lng: -75.235496},
-    map: map,
-    title: 'Hello World!'
-  });
-}
-</script> -->
-    <!-- Bitters Map -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-  var bittersMap = (function () {
-    var myLatlng = new google.maps.LatLng(59.342457, 18.057340),
-        mapCenter = new google.maps.LatLng(59.340458, 18.057340),
-        mapCanvas = document.getElementById('map_canvas'),
-        mapOptions = {
-          center: mapCenter,
-          zoom: 13,
-          scrollwheel: false,
-          draggable: true,
-          disableDefaultUI: true,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        },
-        map = new google.maps.Map(mapCanvas, mapOptions),
-        contentString =
-          '<div id="content">'+
-          '<div id="siteNotice">'+
-          '</div>'+
-          '<h1 id="firstHeading" class="firstHeading">thoughtbot</h1>'+
-          '<div id="bodyContent"'+
-          '<p>Sveavägen 98</p>'+
-          '</div>'+
-          '</div>',
-        infowindow = new google.maps.InfoWindow({
-          content: contentString,
-          maxWidth: 300
-        }),
-        marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: 'thoughtbot (Sweden)'
-        });
-
-    return {
-      init: function () {
-        map.set('styles', [{
-          featureType: 'landscape',
-          elementType: 'geometry',
-          stylers: [
-            { hue: '#ffff00' },
-            { saturation: 30 },
-            { lightness: 10}
-          ]}
-        ]);
-
-        google.maps.event.addListener(marker, 'click', function () {
-          infowindow.open(map,marker);
-        });
-      }
-    };
-  }());
-
-  bittersMap.init();
-</script>
- -->
+    
     <script>
     // Insert GA Tag
     </script>
