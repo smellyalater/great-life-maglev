@@ -78,45 +78,8 @@ img {
   /* Gecko Browsers */ }
 
 /* End Resets, Clears & Defaults */
-.container {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto; }
-
-.container:after {
-  content: "";
-  display: block;
-  clear: both; }
-
-section {
-  padding: 100px 20px; }
-
-.btn {
-  display: inline-block;
-  padding: 15px 30px;
-  border-radius: 50px;
-  color: #fff;
-  border: 1px solid #fff;
-  transition: 200ms;
-  background: transparent;
-  cursor: pointer; }
-
-.btn:hover {
-  text-decoration: none;
-  background: rgba(255, 255, 255, 0.1); }
-
-.btn.yellow {
-  color: #fbc93d;
-  border: 1px solid #fbc93d; }
-
-.btn.smaller {
-  padding: 10px 25px; }
-
-.btn .fa {
-  margin-left: 10px; }
-
 header {
-  background: #222;
+  background: #84DCC6;
   padding: 0 20px;
   position: fixed;
   top: 0;
@@ -200,41 +163,57 @@ header .toggle-menu {
 .splash h2 {
   margin-bottom: 40px; }
 
-.overview {
+/*--------*\
+Begin contact-section
+\*--------*/
+.contact-section {
   text-align: center; }
+  .contact-section .fa {
+    display: inline-block;
+    font-size: 50px; }
+  .contact-section .card {
+    float: left;
+    width: 31%;
+    box-shadow: 0 0 5px #ccc;
+    margin: 0 1%;
+    min-height: 385px; }
+  .contact-section .card-head {
+    padding: 20px;
+    background: #84DCC6;
+    border-bottom: 2px solid;
+    padding-bottom: 0; }
+  .contact-section .rest-of-card {
+    padding: 20px;
+    text-align: left; }
+  .contact-section p {
+    margin-bottom: 0; }
+  .contact-section h3 {
+    margin: 5px 0; }
 
-.overview > div > div {
-  float: left;
-  width: 33%;
-  padding: 0 40px 0 40px; }
-
-.overview p {
-  margin-bottom: 0; }
-
-.hour-details h3 {
-  margin: 5px 0; }
-
-.hour-details div {
-  display: flex;
-  flex-direction: column; }
+.hour-details .massage-hours {
+  margin-top: 20px; }
 
 .contact-us .directions, .contact-us .email-us {
   border-top: 1px solid #eee; }
-.contact-us .fa-phone, .contact-us .fa-map-marker, .contact-us .fa-envelope {
+.contact-us .rest-of-card .fa {
   float: left;
   position: relative;
-  top: 20px; }
+  top: 14px;
+  display: inline-block;
+  font-size: 24px; }
 .contact-us a {
   display: inline-block;
-  padding: 10px 0; }
+  padding: 10px 30px; }
   .contact-us a:hover {
     font-weight: bold;
     text-decoration: none; }
 .contact-us button {
   border: none;
   background: none;
-  padding: 10px 0;
+  padding: 10px 20px;
   color: #999; }
+  .contact-us button:hover {
+    font-weight: bold; }
 
 .email-form {
   display: none; }
@@ -245,75 +224,82 @@ header .toggle-menu {
     padding-left: 15px;
     border-radius: 5px;
     border: 1px solid #ccc; }
+  .email-form textarea {
+    height: 128px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 15px; }
   .email-form input[type="submit"] {
-    background: green;
+    background: #84DCC6;
     color: white; }
 
-.feature.greybg {
-  background: #f6f6f6; }
+.schedule-appointment p {
+  float: left; }
+.schedule-appointment .btn {
+  color: #555;
+  border: 1px solid #555;
+  margin: 36px 0; }
+  .schedule-appointment .btn:hover {
+    background: #84DCC6;
+    box-shadow: 0 0 20px #84DCC6;
+    color: white;
+    border: 1px solid #84DCC6; }
 
-.feature {
+.about-section.greybg {
+  background: #f6f6f6;
+  padding-top: 40px; }
+
+.about-section {
   position: relative;
   overflow: hidden; }
+  .about-section .about-us-blurb {
+    width: 100%; }
 
-.feature img:not(.headshot) {
+.about-section img:not(.headshot) {
   position: absolute;
-  top: 100px;
+  top: 250px;
   right: 55%; }
 
-.feature:nth-of-type(even) img:not(.headshot) {
+.about-section:nth-of-type(even) img:not(.headshot) {
   right: auto;
   left: 55%; }
 
-.feature > div > div {
-  width: 33%;
+.about-section > div > div {
+  width: 55%;
   float: right; }
 
-.feature > div > div > p {
+.about-section > div > div > p {
   margin-bottom: 40px; }
 
-.feature:nth-of-type(even) > div > div {
+.about-section:nth-of-type(even) > div > div {
   float: left; }
 
-.feature ul {
+.about-section ul {
   margin: 0;
   padding: 0; }
 
-.feature ul li {
+.about-section ul li {
   display: block;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eee; }
 
-.feature ul li:last-child {
+.about-section ul li:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: 0; }
 
-.feature ul li h3 {
+.about-section ul li h3 {
   margin: 0 0 5px 0; }
 
-.feature ul li p:last-child {
+.about-section ul li p:last-child {
   margin: 0; }
 
-.feature ul li .fa {
-  float: left;
-  font-size: 30px;
-  background: #fbc93d;
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  text-align: center;
-  padding-top: 10px;
-  border-radius: 25px;
-  margin-right: 20px;
-  margin-top: 7px; }
-
-.feature ul li p {
+.about-section ul li p {
   overflow: hidden; }
 
-.feature img.headshot.fa {
+.about-section img.headshot {
   width: 90px;
   height: 90px;
   margin-right: 20px;
@@ -322,6 +308,9 @@ header .toggle-menu {
   float: left;
   display: inline-block; }
 
+.about-section .more {
+  display: none; }
+
 .js-more-expand {
   margin-left: 8px;
   color: blue;
@@ -329,8 +318,42 @@ header .toggle-menu {
   .js-more-expand i {
     margin-left: 5px; }
 
-.feature .more {
-  display: none; }
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.container:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+section {
+  padding: 100px 20px; }
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: 200ms;
+  background: transparent;
+  cursor: pointer; }
+
+.btn:hover {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1); }
+
+.btn.yellow {
+  color: #fbc93d;
+  border: 1px solid #fbc93d; }
+
+.btn.smaller {
+  padding: 10px 25px; }
+
+.btn .fa {
+  margin-left: 10px; }
 
 .cta {
   background: #fbc93d;
@@ -535,7 +558,7 @@ footer .social a:hover {
     left: 65%; }
 
   .feature > div > div {
-    width: 60%; }
+    width: 55%; }
 
   header nav ul li a {
     padding: 15px; }
