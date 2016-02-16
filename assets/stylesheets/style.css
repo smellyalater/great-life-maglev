@@ -176,7 +176,8 @@ Begin contact-section
     width: 31%;
     box-shadow: 0 0 5px #ccc;
     margin: 0 1%;
-    min-height: 385px; }
+    min-height: 394px;
+    min-width: 240px; }
   .contact-section .card-head {
     padding: 20px;
     background: #84DCC6;
@@ -246,6 +247,13 @@ Begin contact-section
     color: white;
     border: 1px solid #84DCC6; }
 
+@media (max-width: 800px) {
+  .contact-section .card {
+    display: block;
+    float: none;
+    width: 100%;
+    margin: 10px auto;
+    clear: both; } }
 .about-section.greybg {
   background: #f6f6f6;
   padding-top: 40px; }
