@@ -1,0 +1,159 @@
+/*--------*\
+Begin contact-section
+\*--------*/
+
+.contact-section {
+  text-align: center;
+  // & a {
+  //   border-bottom: 1px solid #eee;
+  //   display: block;
+  //   padding: 10px 0;
+  // }
+  & .fa {
+    // background: $accent-color;
+    display: inline-block;
+    font-size: 50px;
+    // width: 100px;
+    // height: 100px;
+    // border-radius: 50px;
+    // margin-bottom: 20px;
+    // padding-top: 25px;
+  }
+  & .card {
+    float: left;
+    width: 31%;
+    // padding: 40px;
+    box-shadow: 0 0 5px #ccc;
+    margin: 0 1%;
+    min-height: 385px;
+  }
+  & .card-head {
+    padding: 20px;
+    background: #84DCC6;
+    border-bottom: 2px solid;
+    padding-bottom: 0;
+  }
+  & .rest-of-card {
+    padding: 20px;
+    text-align: left;
+  }
+  & p {
+    margin-bottom: 0;
+  }
+  & h3 {
+    margin: 5px 0;
+  }
+}
+
+
+.hour-details .massage-hours {
+  margin-top: 20px;
+}
+.contact-us {
+
+  & .directions,
+  & .email-us {
+    border-top: 1px solid #eee;
+  }
+
+  & .rest-of-card .fa {
+    float: left;
+    position: relative;
+    top: 14px;
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  & a {
+    // border-bottom: 1px solid #eee;
+    display: inline-block;
+    padding: 10px 30px;
+
+    &:hover {
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+  & button {
+    border: none;
+    background: none;
+    padding: 10px 20px;
+    color: #999;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.email-form {
+  display: none;
+  & input {
+    float: left;
+    width: 100%;
+    margin: 5px auto;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  textarea {
+    height: 128px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  input[type="submit"] {
+    background: $accent-color;
+    color: white;
+  }
+}
+
+.schedule-appointment {  
+  & p {
+    float: left;
+  }
+
+  & .btn {
+    color: $font-color;
+    border: 1px solid $font-color;
+    margin: 36px 0;
+
+      &:hover {
+        background: $accent-color;
+        box-shadow: 0 0 20px $accent-color;
+        color: white;
+        border: 1px solid $accent-color;
+      }
+  }
+
+
+}
+
+// .call-us {
+//   border-bottom: 1px solid #eee;
+//   padding: 10px 0px;
+// }
+// #map_canvas {
+//   height: 400px;
+//   width: 100%;
+// }
+// #map_canvas img {
+//   max-width: none;
+//   // to prevent UI control bug
+// }
+// #map_canvas .content {
+//   padding: 0 0.5em 1em 0.5em;
+// }
+// #map_canvas .firstHeading {
+//   font-size: 1em;
+//   line-height: 1em;
+//   font-weight: bold;
+//   margin: 0;
+// }
+// #map_canvas #bodyContent p {
+//   font-size: 1em;
+//   margin: 0;
+// }

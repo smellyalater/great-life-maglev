@@ -23,7 +23,7 @@ $(document).ready(function() {
     $('.js-more-expand').click(function() {
         var $moreButton = $(this);
         $(this).parent().next().slideToggle(400);
-        console.log($moreButton);       
+        // console.log($moreButton);       
     });
         // flipCaret();
 
