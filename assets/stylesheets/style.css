@@ -332,6 +332,25 @@ Begin contact-section
 .videos {
   background-color: #555; }
 
+.video-holder {
+  float: left;
+  width: 31%;
+  margin: 20px 1%; }
+  .video-holder h4 {
+    color: white;
+    margin: 0; }
+
+.btn-holder {
+  display: inline-block;
+  width: 100%;
+  margin: 40px 0; }
+  .btn-holder .btn {
+    display: block;
+    clear: both;
+    width: 300px;
+    text-align: center;
+    margin: auto; }
+
 .plyr__captions,
 .plyr__controls {
   -moz-osx-font-smoothing: grayscale;
@@ -861,7 +880,6 @@ Begin contact-section
   display: block; }
 
 .plyr [data-plyr=captions],
-.plyr [data-plyr=fullscreen],
 .plyr--captions-active .plyr__controls .icon--captions-on + svg,
 .plyr--fullscreen-active .icon--exit-fullscreen + svg,
 .plyr--muted .plyr__controls .icon--muted + svg {
@@ -871,6 +889,11 @@ Begin contact-section
 .plyr--fullscreen-enabled [data-plyr=fullscreen] {
   display: inline-block; }
 
+@media all and (max-width: 800px) {
+  .video-holder {
+    float: none;
+    width: 95%;
+    margin: 5% auto; } }
 .container {
   width: 100%;
   max-width: 1000px;

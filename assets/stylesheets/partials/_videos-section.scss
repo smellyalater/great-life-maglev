@@ -2,6 +2,36 @@
   background-color: $video-section-background-color;
 }
 
+
+
+.video-holder {
+    float: left;
+    width: 31%;
+    // box-shadow: 0 0 5px #ccc;
+    margin: 20px 1%;
+
+  h4 {
+    color: white;
+    margin: 0;
+  }
+}
+
+.btn-holder {
+    display: inline-block;
+    width: 100%;
+    margin: 40px 0;
+
+    .btn {
+      display: block;
+      clear: both;
+      width: 300px;
+      text-align: center;
+      margin: auto;
+    }
+  }
+
+
+
 .plyr__captions,
 .plyr__controls {
   -moz-osx-font-smoothing: grayscale;
@@ -634,7 +664,7 @@
 }
 
 .plyr [data-plyr=captions],
-.plyr [data-plyr=fullscreen],
+// .plyr [data-plyr=fullscreen],
 .plyr--captions-active .plyr__controls .icon--captions-on+svg,
 .plyr--fullscreen-active .icon--exit-fullscreen+svg,
 .plyr--muted .plyr__controls .icon--muted+svg {
@@ -646,4 +676,12 @@
   display: inline-block
 }
 
+
+@media all and (max-width: 800px) {
+    .video-holder {
+      float: none;
+      width: 95%;
+      margin: 5% auto;
+  }
+}
 
