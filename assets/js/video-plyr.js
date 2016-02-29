@@ -1,3 +1,11 @@
+// The MIT License (MIT)
+// Copyright (c) 2015 Selz.com
+// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
 ! function(e, t) { "use strict"; "object" == typeof module && "object" == typeof module.exports ? module.exports = t(e, document) : "function" == typeof define && define.amd ? define(null, function() { t(e, document) }) : e.plyr = t(e, document) }("undefined" != typeof window ? window : this, function(e, t) {
     "use strict";
 
@@ -547,4 +555,14 @@ function() {
         return n.initCustomEvent(e, t.bubbles, t.cancelable, t.detail), n }
     return "function" == typeof window.CustomEvent ? !1 : (e.prototype = window.Event.prototype, void(window.CustomEvent = e)) }();
 
-    plyr.setup();
+
+//run the player
+plyr.setup('.plyr', {
+  fullscreen: true,
+  fallback: true,
+  tooltips: {
+      controls: true,
+      seek: true
+  },
+  displayDuration: true,
+});
