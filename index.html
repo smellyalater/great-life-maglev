@@ -10,7 +10,6 @@
     <link href='https://fonts.googleapis.com/css?family=Merriweather:300,700' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/stylesheets/style.css" rel="stylesheet">
-        
   </head>
 
   <body class="main-page">
@@ -91,9 +90,9 @@
     <!-- Contact-section -->
     <section class="contact-section" id="contact-section">
       <div class="container">
-      <h1>Contact Us</h1>
-      <p>Bacon ipsum dolor amet short loin pork doner pork belly. Picanha cow filet mignon capicola kielbasa sausage. Short loin kielbasa swine, salami pig leberkas jerky andouille short ribs.
-      </p>
+        <h1>Contact Us</h1>
+        <p>Bacon ipsum dolor amet short loin pork doner pork belly. Picanha cow filet mignon capicola kielbasa sausage. Short loin kielbasa swine, salami pig leberkas jerky andouille short ribs.
+        </p>
         <div class="card hour-details">
           <div class="card-head">
             <i class="fa fa-clock-o"></i>
@@ -135,10 +134,11 @@
               <i class="fa fa-envelope"></i>
               <button class="js-email-form-expander">Email us</button>
               <form class="email-form" action="http://formspree.io/dr.chonie@gmail.com" method="POST">
-                <input type="_replyto" name="_replyto" placeholder="Your email address">
-                <textarea type="text" name="name" placeholder="What can we help you with?"></textarea>
+                <input type="text" name="_replyto" placeholder="Your email address" required>
+                <textarea type="text" name="Message" placeholder="What can we help you with?" required></textarea>
                 <input type="text" name="_gotcha" style="display:none" />
                 <input type="hidden" name="_next" value="thank-you.html" />
+                <input type="hidden" name="_subject" value="Message from greatlifechiropractic.com" />
                 <input type="submit" value="Send">
               </form>
             </div>
@@ -160,63 +160,53 @@
     <!-- Video Section -->
     <section class="videos" id="video-section">
       <div class="container">
-      <h1>Videos</h1>
-      <p>Bacon ipsum dolor amet short loin pork doner pork belly. Picanha cow filet mignon capicola kielbasa sausage. Short loin kielbasa swine, salami pig leberkas jerky andouille short ribs.</p>
+        <h1>Videos</h1>
+        <p>Bacon ipsum dolor amet short loin pork doner pork belly. Picanha cow filet mignon capicola kielbasa sausage. Short loin kielbasa swine, salami pig leberkas jerky andouille short ribs.</p>
         <div class="video-holder">
-        <h4>Exercises for Runner's Knee</h4>
+          <h4>Exercises for Runner's Knee</h4>
           <div class="plyr">
             <div data-video-id="hzaydQVLhYE" data-type="youtube">
             </div>
           </div>
         </div>
-
         <div class="video-holder">
-        <h4>"The Stick" Self Massage</h4>
+          <h4>"The Stick" Self Massage</h4>
           <div class="plyr">
             <div data-video-id="EffbdrFoYG4" data-type="youtube">
             </div>
           </div>
         </div>
-
         <div class="video-holder">
-        <h4>Foam Roller Self Massage</h4>
+          <h4>Foam Roller Self Massage</h4>
           <div class="plyr">
-            <div data-video-id="ScLEuBAIfI8" data-type="youtube">                
+            <div data-video-id="ScLEuBAIfI8" data-type="youtube">
             </div>
           </div>
         </div>
-
         <div class="video-holder">
-        <h4>Rhomboid Pushup</h4>
+          <h4>Rhomboid Pushup</h4>
           <div class="plyr">
-            <div data-video-id="_7ueEeZizkU" data-type="youtube">                
+            <div data-video-id="_7ueEeZizkU" data-type="youtube">
             </div>
           </div>
         </div>
-
         <div class="video-holder">
-        <h4>Calf Rocker Exercises</h4>
+          <h4>Calf Rocker Exercises</h4>
           <div class="plyr">
-            <div data-video-id="NT82madOWhk" data-type="youtube">                
+            <div data-video-id="NT82madOWhk" data-type="youtube">
             </div>
           </div>
         </div>
-
         <div class="video-holder">
-        <h4>Hip & Lower Back Stretches</h4>
+          <h4>Hip & Lower Back Stretches</h4>
           <div class="plyr">
-            <div data-video-id="2qhAILj5urk" data-type="youtube">                
+            <div data-video-id="2qhAILj5urk" data-type="youtube">
             </div>
           </div>
         </div>
-<div class="btn-holder">
-        <a href="https://www.youtube.com/user/tedloos/videos" class="btn" target="_blank">View more Youtube videos</a>
+        <div class="btn-holder">
+          <a href="https://www.youtube.com/user/tedloos/videos" class="btn" target="_blank">View more Youtube videos</a>
         </div>
-
-
-
-
-
       </div>
     </section>
     <footer>
@@ -225,7 +215,7 @@
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/modernizr-2.8.3.min.js"></script>
-<script type="text/javascript" src="assets/js/video-plyr.js"></script>
+    <script type="text/javascript" src="assets/js/video-plyr.js"></script>
     <script>
     (function(d, p) {
       var a = new XMLHttpRequest(),

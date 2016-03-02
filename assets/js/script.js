@@ -60,4 +60,40 @@ $(function() {
 
 
 
+//
+// BEGIN formspree email form
+//
+
+var $contactForm = $('.email-form');
+$contactForm.submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+        url: '//formspree.io/dr.chonie@gmail.com',
+        method: 'POST',
+        data: $(this).serialize(),
+        dataType: 'json',
+        beforeSend: function() {
+            // $contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+            console.log("before send");
+            debugger;
+        },
+        success: function(data) {
+            // $contactForm.find('.alert--loading').hide();
+            // $contactForm.append('<div class="alert alert--success">Message sent!</div>');
+            console.log("success");
+            debugger;
+        },
+        error: function(err) {
+            $contactForm.find('.alert--loading').hide();
+            $contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+        }
+    });
+});
+
+//
+// END formspree email form
+//
+
+
+
 });
