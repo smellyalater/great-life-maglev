@@ -1,0 +1,17 @@
+.thank-you {
+  background-color: $accent-color;
+
+  .thank-you-message {
+    margin: 10%;
+    text-align: center;
+  }
+
+  a {
+    margin: 20px;
+    min-width: 300px;
+  }
+}
+
+.mail-image {
+  width: 20%;
+}

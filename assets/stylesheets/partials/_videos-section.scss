@@ -1,8 +1,13 @@
+/*----------*\
+BEGIN Video section
+\*----------*/
+
+
+
 .videos {
   background-color: $video-section-background-color;
+  color: white;
 }
-
-
 
 .video-holder {
     float: left;
@@ -11,7 +16,7 @@
     transition: all ease .3s;
 
   h4 {
-    color: white;
+    // color: white;
     margin: 0;
   }
 }
@@ -689,3 +694,6 @@
   }
 }
 
+/*----------*\
+END Video section
+\*----------*/

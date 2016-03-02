@@ -164,35 +164,35 @@ header .toggle-menu {
   margin-bottom: 40px; }
 
 /*--------*\
-Begin contact-section
+BEGIN Contact us section
 \*--------*/
-.contact-section {
-  text-align: center; }
-  .contact-section .fa {
-    display: inline-block;
-    font-size: 50px; }
-  .contact-section .card {
-    float: left;
-    width: 31%;
-    box-shadow: 0 0 5px #ccc;
-    margin: 0 1%;
-    min-height: 394px;
-    min-width: 240px; }
-  .contact-section .card-head {
-    padding: 20px;
-    background: #84DCC6;
-    border-bottom: 2px solid;
-    padding-bottom: 0; }
-  .contact-section .rest-of-card {
-    padding: 20px;
-    text-align: left; }
-  .contact-section p {
-    margin-bottom: 0; }
-  .contact-section h3 {
-    margin: 5px 0; }
+.contact-section .fa {
+  display: inline-block;
+  font-size: 50px; }
+.contact-section .card {
+  text-align: center;
+  float: left;
+  width: 31%;
+  box-shadow: 0 0 5px #ccc;
+  margin: 0 1%;
+  min-height: 394px;
+  min-width: 240px; }
+.contact-section .card-head {
+  padding: 20px;
+  background: #84DCC6;
+  border-bottom: 2px solid;
+  padding-bottom: 0; }
+.contact-section .rest-of-card {
+  padding: 20px;
+  text-align: left; }
+.contact-section h3 {
+  margin: 5px 0; }
 
 .hour-details .massage-hours {
   margin-top: 20px; }
+
+.massage-hours p {
+  margin-bottom: 0; }
 
 .contact-us .directions, .contact-us .email-us {
   border-top: 1px solid #eee; }
@@ -233,7 +233,8 @@ Begin contact-section
     padding-left: 15px; }
   .email-form input[type="submit"] {
     background: #84DCC6;
-    color: white; }
+    color: white;
+    margin-bottom: 15px; }
 
 .schedule-appointment p {
   float: left; }
@@ -257,9 +258,14 @@ Begin contact-section
     width: 100%;
     margin: 10px auto;
     clear: both; } }
+/*----------*\
+END Contact us section
+\*----------*/
+/*----------*\
+BEGIN About section
+\*----------*/
 .about-section.greybg {
-  background: #f6f6f6;
-  padding-top: 40px; }
+  background: #f6f6f6; }
 
 .about-section {
   position: relative;
@@ -329,8 +335,15 @@ Begin contact-section
   .js-more-expand i {
     margin-left: 5px; }
 
+/*----------*\
+END About section
+\*----------*/
+/*----------*\
+BEGIN Video section
+\*----------*/
 .videos {
-  background-color: #555; }
+  background-color: #555;
+  color: white; }
 
 .video-holder {
   float: left;
@@ -338,7 +351,6 @@ Begin contact-section
   margin: 20px 1%;
   transition: all ease .3s; }
   .video-holder h4 {
-    color: white;
     margin: 0; }
 
 .video-holder:hover {
@@ -898,6 +910,21 @@ Begin contact-section
     float: none;
     width: 95%;
     margin: 5% auto; } }
+/*----------*\
+END Video section
+\*----------*/
+.thank-you {
+  background-color: #84DCC6; }
+  .thank-you .thank-you-message {
+    margin: 10%;
+    text-align: center; }
+  .thank-you a {
+    margin: 20px;
+    min-width: 300px; }
+
+.mail-image {
+  width: 20%; }
+
 .container {
   width: 100%;
   max-width: 1000px;
@@ -909,7 +936,7 @@ Begin contact-section
   clear: both; }
 
 section {
-  padding: 100px 20px; }
+  padding: 60px 20px; }
 
 .btn {
   display: inline-block;
