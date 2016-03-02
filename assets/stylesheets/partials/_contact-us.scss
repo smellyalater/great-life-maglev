@@ -1,9 +1,9 @@
 /*--------*\
-Begin contact-section
+BEGIN Contact us section
 \*--------*/
 
 .contact-section {
-  text-align: center;
+  // text-align: center;
   // & a {
   //   border-bottom: 1px solid #eee;
   //   display: block;
@@ -20,6 +20,7 @@ Begin contact-section
     // padding-top: 25px;
   }
   & .card {
+    text-align: center;
     float: left;
     width: 31%;
     // padding: 40px;
@@ -39,7 +40,7 @@ Begin contact-section
     text-align: left;
   }
   & p {
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
   & h3 {
     margin: 5px 0;
@@ -49,6 +50,10 @@ Begin contact-section
 
 .hour-details .massage-hours {
   margin-top: 20px;
+}
+
+.massage-hours p {
+  margin-bottom: 0;
 }
 .contact-us {
 
@@ -109,6 +114,7 @@ Begin contact-section
   input[type="submit"] {
     background: $accent-color;
     color: white;
+    margin-bottom: 15px;
   }
 }
 
@@ -146,28 +152,6 @@ Begin contact-section
     }
 }
 
-// .call-us {
-//   border-bottom: 1px solid #eee;
-//   padding: 10px 0px;
-// }
-// #map_canvas {
-//   height: 400px;
-//   width: 100%;
-// }
-// #map_canvas img {
-//   max-width: none;
-//   // to prevent UI control bug
-// }
-// #map_canvas .content {
-//   padding: 0 0.5em 1em 0.5em;
-// }
-// #map_canvas .firstHeading {
-//   font-size: 1em;
-//   line-height: 1em;
-//   font-weight: bold;
-//   margin: 0;
-// }
-// #map_canvas #bodyContent p {
-//   font-size: 1em;
-//   margin: 0;
-// }
+/*----------*\
+END Contact us section
+\*----------*/
