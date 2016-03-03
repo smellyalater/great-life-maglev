@@ -74,13 +74,13 @@ $contactForm.submit(function(e) {
         dataType: 'json',
         beforeSend: function() {
             // $contactForm.append('<div class="alert alert--loading">Sending message…</div>');
-            console.log("before send");
+            // console.log("before send");
             // debugger;
         },
         success: function(data) {
             // $contactForm.find('.alert--loading').hide();
             $contactForm.html('  <div class="thank-you-message"><h2>Thank you for the love!</h2><div class="mail-image-holder"><img class="mail-image animated bounceOutRight" alt="love mail icon" src="assets/images/love-mail.png" /></div><h2>We\'ll get back to you as soon as possible!</h2>');
-            console.log("success");
+            // console.log("success");
             // debugger;
         },
         error: function(err) {
