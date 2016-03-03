@@ -78,6 +78,48 @@ img {
   /* Gecko Browsers */ }
 
 /* End Resets, Clears & Defaults */
+/*---------*\
+BEGIN animation css
+\*---------*/
+.animated {
+  animation-duration: 6s;
+  animation-fill-mode: both; }
+
+.animated.infinite {
+  animation-iteration-count: infinite; }
+
+.animated.hinge {
+  animation-duration: 2s; }
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: 4s; }
+
+@keyframes bounceOutRight {
+  20% {
+    opacity: 1;
+    transform: translate3d(-20px, 0, 0); }
+  to {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0); } }
+.bounceOutRight {
+  animation-name: bounceOutRight; }
+
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0); }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0); }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0); } }
+.shake {
+  animation-name: shake; }
+
+/*---------*\
+END animation css
+\*---------*/
 header {
   background: #84DCC6;
   padding: 0 20px;
@@ -234,7 +276,8 @@ BEGIN Contact us section
   .email-form input[type="submit"] {
     background: #84DCC6;
     color: white;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    padding: 0; }
 
 .schedule-appointment p {
   float: left; }
@@ -258,6 +301,16 @@ BEGIN Contact us section
     width: 100%;
     margin: 10px auto;
     clear: both; } }
+.thank-you-message {
+  text-align: center;
+  background-color: #84DCC6;
+  color: black;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 78px #84DCC6; }
+  .thank-you-message p {
+    margin: 0; }
+
 /*----------*\
 END Contact us section
 \*----------*/

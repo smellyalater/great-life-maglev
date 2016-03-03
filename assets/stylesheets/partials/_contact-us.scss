@@ -115,6 +115,7 @@ BEGIN Contact us section
     background: $accent-color;
     color: white;
     margin-bottom: 15px;
+    padding: 0;
   }
 }
 
@@ -151,6 +152,21 @@ BEGIN Contact us section
       clear: both;
     }
 }
+
+//Ajax thank you section
+.thank-you-message {
+  text-align: center;
+  background-color: #84DCC6;
+  color: black;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 78px #84DCC6;
+
+  p {
+    margin: 0;
+  }
+}
+
 
 /*----------*\
 END Contact us section
