@@ -4,9 +4,17 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
-  & h1 {
-    color: white;
-  }
+
+    & a {
+    display: block;
+    padding: 20px 5px;
+    text-shadow: 1px 1px #eee;
+    font-size: 72px;
+    background-color: rgba(255, 255, 255, 0.5);
+    line-height: 72px;
+    font-weight: 900;
+    color: #555;
+    }
 }
 
 
@@ -33,11 +41,29 @@
 
 .splash .container {
   position: relative;
-  top: 48%;
-  transform: translateY(-50%);
+  top: 30%;
+  /* transform: translateY(-50%); */
   z-index: 5;
+  float: right;
+  width: auto;
 }
 
 .splash h2 {
   margin-bottom: 40px;
+}
+
+
+@media (max-width: 800px) {
+
+  .splash .container {
+    position: relative;
+    top: 0;
+    float: none;
+    transform: none;
+  }
+
+  .splash h1 {
+    font-size: 40px;
+    display: inline-block;
+  }
 }

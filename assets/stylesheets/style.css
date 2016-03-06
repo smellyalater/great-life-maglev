@@ -64,7 +64,7 @@ a {
   text-decoration: none; }
 
 a:hover {
-  text-decoration: underline; }
+  /*   text-decoration: underline; */ }
 
 img {
   max-width: 100%; }
@@ -120,6 +120,9 @@ BEGIN animation css
 /*---------*\
 END animation css
 \*---------*/
+/*-------*\
+BEGIN Header
+\*-------*/
 header {
   background: #84DCC6;
   padding: 0 20px;
@@ -144,6 +147,10 @@ header .logo .fa {
   position: relative;
   top: -1px;
   margin-right: 7px; }
+
+nav.mobile-active {
+  left: 0;
+  top: 63px; }
 
 header nav {
   float: right; }
@@ -170,13 +177,151 @@ header nav ul li a.active {
 header .toggle-menu {
   display: none; }
 
+/*! * Hamburgers * @description Tasty CSS-animated hamburgers * @author Jonathan Suh @jonsuh * @site https: //jonsuh.com/hamburgers
+* @link https: //github.com/jonsuh/hamburgers
+*/
+.hamburger {
+  font: inherit;
+  display: inline-block;
+  overflow: visible;
+  margin: 0;
+  padding: 15px;
+  cursor: pointer;
+  transition-timing-function: linear;
+  transition-duration: .15s;
+  transition-property: opacity, -webkit-filter;
+  transition-property: opacity, filter;
+  transition-property: opacity, filter, -webkit-filter;
+  text-transform: none;
+  color: inherit;
+  border: 0;
+  background-color: transparent;
+  float: right; }
+
+.hamburger:hover {
+  opacity: 0.7; }
+
+.hamburger-box {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px; }
+
+.hamburger-inner {
+  top: 50%;
+  display: block;
+  margin-top: -2px; }
+
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  border-radius: 4px;
+  background-color: white; }
+
+.hamburger-inner:after,
+.hamburger-inner:before {
+  display: block;
+  content: ""; }
+
+.hamburger-inner:before {
+  top: -10px; }
+
+.hamburger-inner:after {
+  bottom: -10px; }
+
+.hamburger--spin .hamburger-inner {
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition-duration: 0.3s; }
+
+.hamburger--spin .hamburger-inner:before {
+  transition: top 0.1s 0.34s ease-in, opacity 0.1s ease-in; }
+
+.hamburger--spin .hamburger-inner:after {
+  transition: bottom 0.1s 0.34s ease-in, -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--spin.is-active .hamburger-inner {
+  transition-delay: .14s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg); }
+
+.hamburger--spin.is-active .hamburger-inner:before {
+  top: 0;
+  transition: top .1s ease-out, opacity .1s .14s ease-out;
+  opacity: 0; }
+
+.hamburger--spin.is-active .hamburger-inner:after {
+  bottom: 0;
+  transition: bottom 0.1s ease-out, -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
+.hamburger--spin-r .hamburger-inner {
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition-duration: 0.3s; }
+
+.hamburger--spin-r .hamburger-inner:before {
+  transition: top 0.1s 0.34s ease-in, opacity 0.1s ease-in; }
+
+.hamburger--spin-r .hamburger-inner:after {
+  transition: bottom 0.1s 0.34s ease-in, -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--spin-r.is-active .hamburger-inner {
+  transition-delay: .14s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transform: rotate(-225deg);
+  transform: rotate(-225deg); }
+
+.hamburger--spin-r.is-active .hamburger-inner:before {
+  top: 0;
+  transition: top .1s ease-out, opacity .1s .14s ease-out;
+  opacity: 0; }
+
+.hamburger--spin-r.is-active .hamburger-inner:after {
+  bottom: 0;
+  transition: bottom 0.1s ease-out, -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
+/* 
+@media (min-width: 800px) {
+  .hamburger {
+    display: none;
+  }
+} */
+/*-------*\
+END Header
+\*-------*/
 .splash {
   background: url("../images/woman-jogging.jpg");
   height: 100vh;
   overflow: hidden;
   position: relative; }
-  .splash h1 {
-    color: white; }
+  .splash a {
+    display: block;
+    padding: 20px 5px;
+    text-shadow: 1px 1px #eee;
+    font-size: 72px;
+    background-color: rgba(255, 255, 255, 0.5);
+    line-height: 72px;
+    font-weight: 900;
+    color: #555; }
 
 /*.splash:after{
     content: "";
@@ -198,13 +343,25 @@ header .toggle-menu {
 }*/
 .splash .container {
   position: relative;
-  top: 48%;
-  transform: translateY(-50%);
-  z-index: 5; }
+  top: 30%;
+  /* transform: translateY(-50%); */
+  z-index: 5;
+  float: right;
+  width: auto; }
 
 .splash h2 {
   margin-bottom: 40px; }
 
+@media (max-width: 800px) {
+  .splash .container {
+    position: relative;
+    top: 0;
+    float: none;
+    transform: none; }
+
+  .splash h1 {
+    font-size: 40px;
+    display: inline-block; } }
 /*--------*\
 BEGIN Contact us section
 \*--------*/
@@ -433,9 +590,7 @@ BEGIN Video section
   to {
     background-position: 40px 0; } }
 .plyr {
-  position: relative;
-  max-width: 100%;
-  min-width: 290px; }
+  position: relative; }
 
 .plyr,
 .plyr *,
