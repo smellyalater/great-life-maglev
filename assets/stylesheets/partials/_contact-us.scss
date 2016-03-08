@@ -26,8 +26,8 @@ BEGIN Contact us section
     // padding: 40px;
     box-shadow: 0 0 5px #ccc;
     margin: 0 1%;
-    min-height: 394px;
-    min-width: 240px;
+    min-height: 410px;
+/*     min-width: 240px; */
   }
   & .card-head {
     padding: 20px;
@@ -127,12 +127,14 @@ BEGIN Contact us section
   & .btn {
     color: $font-color;
     border: 1px solid $font-color;
+    color: #555;
+    border: 1px solid #555;
     margin: 36px auto;
-    text-align: center;
-    width: 265px;
-    height: 60px;
-    // line-height: 60px;
-    // display: block;
+    display: block;
+    float: left;
+    padding: 10px 20px;
+    width: 230px;
+    margin-left: calc(50% - 115px);
 
       &:hover {
         background: $accent-color;
@@ -143,7 +145,7 @@ BEGIN Contact us section
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   .contact-section .card {
       display: block;
       float: none;

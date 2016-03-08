@@ -180,136 +180,133 @@ header .toggle-menu {
 /*! * Hamburgers * @description Tasty CSS-animated hamburgers * @author Jonathan Suh @jonsuh * @site https: //jonsuh.com/hamburgers
 * @link https: //github.com/jonsuh/hamburgers
 */
-.hamburger {
-  font: inherit;
-  display: inline-block;
-  overflow: visible;
-  margin: 0;
-  padding: 15px;
-  cursor: pointer;
-  transition-timing-function: linear;
-  transition-duration: .15s;
-  transition-property: opacity, -webkit-filter;
-  transition-property: opacity, filter;
-  transition-property: opacity, filter, -webkit-filter;
-  text-transform: none;
-  color: inherit;
-  border: 0;
-  background-color: transparent;
-  float: right; }
-
-.hamburger:hover {
-  opacity: 0.7; }
-
-.hamburger-box {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 24px; }
-
-.hamburger-inner {
-  top: 50%;
-  display: block;
-  margin-top: -2px; }
-
-.hamburger-inner,
-.hamburger-inner:after,
-.hamburger-inner:before {
-  position: absolute;
-  width: 40px;
-  height: 4px;
-  transition-timing-function: ease;
-  transition-duration: .15s;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  border-radius: 4px;
-  background-color: white; }
-
-.hamburger-inner:after,
-.hamburger-inner:before {
-  display: block;
-  content: ""; }
-
-.hamburger-inner:before {
-  top: -10px; }
-
-.hamburger-inner:after {
-  bottom: -10px; }
-
-.hamburger--spin .hamburger-inner {
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition-duration: 0.3s; }
-
-.hamburger--spin .hamburger-inner:before {
-  transition: top 0.1s 0.34s ease-in, opacity 0.1s ease-in; }
-
-.hamburger--spin .hamburger-inner:after {
-  transition: bottom 0.1s 0.34s ease-in, -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-
-.hamburger--spin.is-active .hamburger-inner {
-  transition-delay: .14s;
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  -webkit-transform: rotate(225deg);
-  transform: rotate(225deg); }
-
-.hamburger--spin.is-active .hamburger-inner:before {
-  top: 0;
-  transition: top .1s ease-out, opacity .1s .14s ease-out;
-  opacity: 0; }
-
-.hamburger--spin.is-active .hamburger-inner:after {
-  bottom: 0;
-  transition: bottom 0.1s ease-out, -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg); }
-
-.hamburger--spin-r .hamburger-inner {
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition-duration: 0.3s; }
-
-.hamburger--spin-r .hamburger-inner:before {
-  transition: top 0.1s 0.34s ease-in, opacity 0.1s ease-in; }
-
-.hamburger--spin-r .hamburger-inner:after {
-  transition: bottom 0.1s 0.34s ease-in, -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-
-.hamburger--spin-r.is-active .hamburger-inner {
-  transition-delay: .14s;
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  -webkit-transform: rotate(-225deg);
-  transform: rotate(-225deg); }
-
-.hamburger--spin-r.is-active .hamburger-inner:before {
-  top: 0;
-  transition: top .1s ease-out, opacity .1s .14s ease-out;
-  opacity: 0; }
-
-.hamburger--spin-r.is-active .hamburger-inner:after {
-  bottom: 0;
-  transition: bottom 0.1s ease-out, -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg); }
-
-/* 
-@media (min-width: 800px) {
+@media all and (min-width: 768px) {
+  button.hamburger.hamburger--spin {
+    display: none; } }
+@media all and (max-width: 767px) {
   .hamburger {
-    display: none;
-  }
-} */
+    font: inherit;
+    display: inline-block;
+    overflow: visible;
+    margin: 0;
+    padding: 15px;
+    cursor: pointer;
+    transition-timing-function: linear;
+    transition-duration: .15s;
+    transition-property: opacity, -webkit-filter;
+    transition-property: opacity, filter;
+    transition-property: opacity, filter, -webkit-filter;
+    text-transform: none;
+    color: inherit;
+    border: 0;
+    background-color: transparent;
+    float: right; }
+
+  .hamburger:hover {
+    opacity: 0.7; }
+
+  .hamburger-box {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px; }
+
+  .hamburger-inner {
+    top: 50%;
+    display: block;
+    margin-top: -2px; }
+
+  .hamburger-inner,
+  .hamburger-inner:after,
+  .hamburger-inner:before {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    border-radius: 4px;
+    background-color: white; }
+
+  .hamburger-inner:after,
+  .hamburger-inner:before {
+    display: block;
+    content: ""; }
+
+  .hamburger-inner:before {
+    top: -10px; }
+
+  .hamburger-inner:after {
+    bottom: -10px; }
+
+  .hamburger--spin .hamburger-inner {
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition-duration: 0.3s; }
+
+  .hamburger--spin .hamburger-inner:before {
+    transition: top 0.1s 0.34s ease-in, opacity 0.1s ease-in; }
+
+  .hamburger--spin .hamburger-inner:after {
+    transition: bottom 0.1s 0.34s ease-in, -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+  .hamburger--spin.is-active .hamburger-inner {
+    transition-delay: .14s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg); }
+
+  .hamburger--spin.is-active .hamburger-inner:before {
+    top: 0;
+    transition: top .1s ease-out, opacity .1s .14s ease-out;
+    opacity: 0; }
+
+  .hamburger--spin.is-active .hamburger-inner:after {
+    bottom: 0;
+    transition: bottom 0.1s ease-out, -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+
+  .hamburger--spin-r .hamburger-inner {
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition-duration: 0.3s; }
+
+  .hamburger--spin-r .hamburger-inner:before {
+    transition: top 0.1s 0.34s ease-in, opacity 0.1s ease-in; }
+
+  .hamburger--spin-r .hamburger-inner:after {
+    transition: bottom 0.1s 0.34s ease-in, -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+  .hamburger--spin-r.is-active .hamburger-inner {
+    transition-delay: .14s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: rotate(-225deg);
+    transform: rotate(-225deg); }
+
+  .hamburger--spin-r.is-active .hamburger-inner:before {
+    top: 0;
+    transition: top .1s ease-out, opacity .1s .14s ease-out;
+    opacity: 0; }
+
+  .hamburger--spin-r.is-active .hamburger-inner:after {
+    bottom: 0;
+    transition: bottom 0.1s ease-out, -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg); } }
 /*-------*\
 END Header
 \*-------*/
 .splash {
-  background: url("../images/woman-jogging.jpg");
+  background: url("../images/woman-jogging.jpg") no-repeat;
   height: 100vh;
   overflow: hidden;
   position: relative; }
@@ -352,14 +349,14 @@ END Header
 .splash h2 {
   margin-bottom: 40px; }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   .splash .container {
     position: relative;
     top: 0;
     float: none;
     transform: none; }
 
-  .splash h1 {
+  .splash a {
     font-size: 40px;
     display: inline-block; } }
 /*--------*\
@@ -374,8 +371,8 @@ BEGIN Contact us section
   width: 31%;
   box-shadow: 0 0 5px #ccc;
   margin: 0 1%;
-  min-height: 394px;
-  min-width: 240px; }
+  min-height: 410px;
+  /*     min-width: 240px; */ }
 .contact-section .card-head {
   padding: 20px;
   background: #84DCC6;
@@ -441,17 +438,21 @@ BEGIN Contact us section
 .schedule-appointment .btn {
   color: #555;
   border: 1px solid #555;
+  color: #555;
+  border: 1px solid #555;
   margin: 36px auto;
-  text-align: center;
-  width: 265px;
-  height: 60px; }
+  display: block;
+  float: left;
+  padding: 10px 20px;
+  width: 230px;
+  margin-left: calc(50% - 115px); }
   .schedule-appointment .btn:hover {
     background: #84DCC6;
     box-shadow: 0 0 20px #84DCC6;
     color: white;
     border: 1px solid #84DCC6; }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   .contact-section .card {
     display: block;
     float: none;
@@ -540,8 +541,14 @@ BEGIN About section
 
 .js-more-expand {
   margin-left: 8px;
-  color: blue;
-  cursor: pointer; }
+  color: tomato;
+  cursor: pointer;
+  display: block;
+  background: transparent;
+  border: 1px solid tomato;
+  border-radius: 3px;
+  margin-top: 10px;
+  padding: 0 10px; }
   .js-more-expand i {
     margin-left: 5px; }
 
@@ -1338,7 +1345,7 @@ footer .social a {
 footer .social a:hover {
   color: #fff; }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   section {
     padding: 80px 10px; }
 
@@ -1390,7 +1397,7 @@ footer .social a:hover {
 
   .pricing h2 {
     margin-bottom: 40px; } }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   section {
     padding: 40px 10px; }
 
@@ -1419,7 +1426,7 @@ footer .social a:hover {
   header nav {
     float: none;
     position: fixed;
-    top: 56px;
+    top: 63px;
     left: -300px;
     bottom: 0;
     width: 100%;

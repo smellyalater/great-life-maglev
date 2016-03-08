@@ -1,6 +1,6 @@
 
 .splash {
-  background: url('../images/woman-jogging.jpg');
+  background: url('../images/woman-jogging.jpg') no-repeat;
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -53,7 +53,7 @@
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
 
   .splash .container {
     position: relative;
@@ -62,7 +62,7 @@
     transform: none;
   }
 
-  .splash h1 {
+  .splash a {
     font-size: 40px;
     display: inline-block;
   }
