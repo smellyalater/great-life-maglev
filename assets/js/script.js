@@ -19,6 +19,7 @@ $('.hamburger').click(function() {
 
 $('.top-nav a').click(function() {
   $(this).closest('.top-nav').toggleClass('mobile-active');
+  $('.hamburger').toggleClass('is-active');
 });
 
 //
