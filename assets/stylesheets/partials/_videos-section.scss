@@ -686,7 +686,7 @@ BEGIN Video section
 }
 
 
-@media all and (max-width: 800px) {
+@media (max-width: 767px) {
     .video-holder {
       float: none;
       width: 95%;

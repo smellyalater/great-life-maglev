@@ -1120,7 +1120,7 @@ BEGIN Video section
 .plyr--fullscreen-enabled [data-plyr=fullscreen] {
   display: inline-block; }
 
-@media all and (max-width: 800px) {
+@media (max-width: 767px) {
   .video-holder {
     float: none;
     width: 95%;
