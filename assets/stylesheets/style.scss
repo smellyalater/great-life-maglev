@@ -262,10 +262,11 @@ footer .social a:hover {
   color: #fff;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   section {
     padding: 80px 10px;
   }
+
   header,
   footer {
     padding: 0 10px;
@@ -317,7 +318,7 @@ footer .social a:hover {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   section {
     padding: 40px 10px;
   }
@@ -346,7 +347,7 @@ footer .social a:hover {
   header nav {
     float: none;
     position: fixed;
-    top: 56px;
+    top: 63px;
     left: -300px;
     bottom: 0;
     width: 100%;
