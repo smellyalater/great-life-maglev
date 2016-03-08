@@ -17,6 +17,9 @@ $('.hamburger').click(function() {
   $(this).toggleClass('is-active');
 });
 
+$('.top-nav a').click(function() {
+  $(this).closest('.top-nav').toggleClass('mobile-active');
+});
 
 //
 // BEGIN click elements to expand/collapse content
